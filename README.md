@@ -1,4 +1,4 @@
-# Suhaan Photography Portfolio
+# Shubham Satre Photographs
 
 A modern, responsive photography portfolio website showcasing wedding, portrait, and landscape photography.
 
