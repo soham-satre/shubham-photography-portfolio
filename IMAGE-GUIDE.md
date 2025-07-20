@@ -33,19 +33,19 @@ d:\Project\Portfo\
 │   │   ├── lifestyle-1.jpg
 │   │   ├── fashion-1.jpg
 │   │   └── bw-1.jpg
-│   └── landscapes/
-│       ├── mountains-1.jpg         (Landscape photos)
-│       ├── ocean-1.jpg
-│       ├── forest-1.jpg
-│       ├── sunset-1.jpg
-│       ├── desert-1.jpg
-│       ├── lake-1.jpg
-│       ├── architecture-1.jpg
-│       ├── stars-1.jpg
-│       ├── waterfall-1.jpg
-│       ├── road-1.jpg
-│       ├── weather-1.jpg
-│       └── seasonal-1.jpg
+│   └── maternity/
+│       ├── expecting-1.jpg         (Maternity photos)
+│       ├── bump-1.jpg
+│       ├── golden-hour-1.jpg
+│       ├── tender-1.jpg
+│       ├── studio-1.jpg
+│       ├── nature-1.jpg
+│       ├── partner-1.jpg
+│       ├── silhouette-1.jpg
+│       ├── family-anticipation-1.jpg
+│       ├─ artistic-1.jpg
+│       ├── lifestyle-1.jpg
+│       └── beginnings-1.jpg
 ```
 
 ## 🖼️ **Image Requirements**
