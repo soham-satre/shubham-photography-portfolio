@@ -53,23 +53,50 @@ function initGallery() {
 function initContactForm() {
     const form = document.querySelector('.contact-form form');
     if (form) {
+        // Only add validation, don't prevent form submission to Formspree
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
             // Get form data
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
             
-            // Simple validation
-            if (!data.name || !data.email || !data.message) {
+            // Simple validation for required fields
+            if (!data.name || !data.email) {
+                e.preventDefault(); // Only prevent if validation fails
                 alert('Please fill in all required fields.');
                 return;
             }
             
-            // Here you would typically send the data to a server
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            form.reset();
+            // If validation passes, let the form submit to Formspree normally
+            // No e.preventDefault() here - form will submit to Formspree
         });
+    }
+    
+    // Check for success parameter in URL and show success message
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        showSuccessMessage();
+        // Clean URL by removing the success parameter
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+}
+
+// Show success message
+function showSuccessMessage() {
+    const form = document.querySelector('.contact-form');
+    if (form) {
+        const successDiv = document.createElement('div');
+        successDiv.innerHTML = `
+            <div style="background: #d4edda; color: #155724; padding: 1rem; border-radius: 5px; margin-bottom: 1rem; border: 1px solid #c3e6cb;">
+                <strong>✓ Message Sent Successfully!</strong><br>
+                Thank you for your inquiry. I'll get back to you within 24 hours.
+            </div>
+        `;
+        form.insertBefore(successDiv, form.firstChild);
+        
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+            successDiv.remove();
+        }, 5000);
     }
 }
 
