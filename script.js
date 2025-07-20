@@ -39,17 +39,13 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Gallery lightbox functionality
+// Gallery display functionality (non-clickable)
 function initGallery() {
     const galleryItems = document.querySelectorAll('.gallery-item');
     
     galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Here you would typically open a lightbox
-            // For now, we'll just show an alert
-            const title = item.dataset.title || 'Image';
-            alert(`Opening ${title} in lightbox`);
-        });
+        // Remove any click functionality - just display images
+        item.style.cursor = 'default';
     });
 }
 
