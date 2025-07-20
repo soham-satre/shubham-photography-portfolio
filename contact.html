@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Suhaan Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Suhaan</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Let's Work Together</h1>
+            <p>Ready to capture your special moments? Get in touch to discuss your photography needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 2rem; color: #333;">Send Me a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 5px; font-family: 'Inter', sans-serif;">
+                                <option value="">Select a service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="landscape">Landscape/Travel</option>
+                                <option value="event">Event Photography</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 5px; font-family: 'Inter', sans-serif;">
+                                <option value="">Select budget range</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell me about your vision *</label>
+                            <textarea id="message" name="message" placeholder="Please describe your photography needs, vision, location preferences, and any specific requests..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p style="color: #666; margin-bottom: 2rem; line-height: 1.6;">
+                        I'd love to hear about your photography needs and discuss how we can create something beautiful together. Feel free to reach out through any of the following channels:
+                    </p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:hello@suhaanphotography.com" style="color: #8B4513; text-decoration: none;">hello@suhaanphotography.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:+1234567890" style="color: #8B4513; text-decoration: none;">+1 (234) 567-8900</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong><br>
+                            <span style="color: #666;">New York City, NY<br>Available for travel worldwide</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Response Time</strong><br>
+                            <span style="color: #666;">Within 24 hours<br>Monday - Saturday</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h4 style="margin-bottom: 1rem; color: #333;">Follow My Work</h4>
+                        <div class="social-links">
+                            <a href="#" style="color: #8B4513; font-size: 1.8rem; margin-right: 1rem;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="color: #8B4513; font-size: 1.8rem; margin-right: 1rem;"><i class="fab fa-facebook"></i></a>
+                            <a href="#" style="color: #8B4513; font-size: 1.8rem; margin-right: 1rem;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" style="color: #8B4513; font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 80px 20px; background: #f8f8f8;">
+        <div class="container">
+            <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 3rem; color: #333;">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: white; margin-bottom: 1rem; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="padding: 1.5rem; border-bottom: 1px solid #eee;">
+                        <h4 style="color: #333; margin-bottom: 0.5rem;">How far in advance should I book?</h4>
+                        <p style="color: #666; margin: 0;">For weddings, I recommend booking 6-12 months in advance. Portrait sessions can usually be scheduled 2-4 weeks ahead.</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; margin-bottom: 1rem; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="padding: 1.5rem; border-bottom: 1px solid #eee;">
+                        <h4 style="color: #333; margin-bottom: 0.5rem;">What's included in your packages?</h4>
+                        <p style="color: #666; margin: 0;">All packages include professional editing, high-resolution digital gallery, and print release. Specific inclusions vary by package type.</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; margin-bottom: 1rem; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="padding: 1.5rem; border-bottom: 1px solid #eee;">
+                        <h4 style="color: #333; margin-bottom: 0.5rem;">Do you travel for shoots?</h4>
+                        <p style="color: #666; margin: 0;">Yes! I love destination photography and am available for travel worldwide. Travel fees may apply depending on location.</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="padding: 1.5rem;">
+                        <h4 style="color: #333; margin-bottom: 0.5rem;">How long until I receive my photos?</h4>
+                        <p style="color: #666; margin: 0;">Portrait sessions are delivered within 1-2 weeks. Wedding galleries are typically ready within 4-6 weeks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Suhaan Photography</h4>
+                    <p>Capturing life's most precious moments with artistic vision and professional excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="portraits.html">Portraits</a></li>
+                        <li><a href="landscapes.html">Landscapes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suhaan Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
