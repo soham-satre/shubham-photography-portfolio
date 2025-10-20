@@ -104,6 +104,10 @@ Replace images in the `/images/` folders with your own photography. Ensure image
 ### Adding More Gallery Items
 Copy the existing `.gallery-item` structure in gallery pages and update image sources.
 
+### Engagement Gallery
+This project now includes an **Engagement** gallery page (`engagement.html`).
+Place optimized engagement images in `images/engagement/` named `1.jpg`..`9.jpg` to have them appear in the gallery.
+
 ## 📞 Contact Form Setup
 
 The contact form uses **Formspree** for email handling:
